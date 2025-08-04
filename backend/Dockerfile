@@ -11,9 +11,10 @@ COPY . .
 
 EXPOSE 3000
 
-RUN bun install -g pm2
+# RUN bun install -g pm2
 
-CMD ["pm2", "start", "bun", "--", "run", "index.ts"]
+# CMD ["pm2", "start", "bun", "--", "run", "index.ts"]
 
+CMD ["bun", "run", "index.ts"]
 
 
